@@ -19,7 +19,7 @@ function HomeScreen({ navigation }) {
         />
       </View>
       <View style={styles.buttonContainer}>
-        <Pressable onPress={isValidInput(navigation, servings)}>
+        <Pressable onPress={() => navigation.navigate('Recipe')}>
           <Text style={styles.buttonText}>Veiw Recipe</Text>
         </Pressable>
       </View>
